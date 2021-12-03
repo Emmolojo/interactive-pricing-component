@@ -1,0 +1,406 @@
+                                                   :root {
+                                                      --s-cyan: hsl(174, 77%, 80%);
+                                                      --st-cyan: hsl(174, 86%, 45%);
+                                                      --g-red: hsl(14, 92%, 95%);
+                                                      --l-red: hsl(15, 100%, 70%);
+                                                      --p-blue: hsl(226, 100%, 87%);
+                                                      --white: hsl (0, 0%, 100%);
+                                                      --vp-blue: hsl(230, 100%, 99%);
+                                                      --lg-blue: hsl(224, 65%, 95%);
+                                                      --t-lg-blue: hsl(223, 50%, 87%);
+                                                      --g-blue: hsl(225, 20%, 60%);
+                                                      --dd-blue: hsl(227, 35%, 25%);
+                                                  }
+                                                  
+                                                  * {
+                                                      margin: 0;
+                                                      padding: 0;
+                                                      box-sizing: border-box;
+                                                      font-family: 'Manrope', sans-serif;
+                                                      font-size: 15px;
+                                                  }
+                                                  
+                                                  .container {
+                                                      height: 100vh;
+                                                      width: 100%;
+                                                      padding-top: 3rem;
+                                                      display: flex;
+                                                      align-items: center;
+                                                      flex-direction: column;
+                                                      background-image: url('assets/bg-pattern.svg');
+                                                      background-repeat: no-repeat;
+                                                      background-color: var(--vp-blue);
+                                                  }
+                                                  
+                                                  h1,
+                                                  .header p {
+                                                      font-family: 'Manrope', sans-serif;
+                                                      text-align: center;
+                                                  }
+                                                  
+                                                  .header p {
+                                                      width: 250px;
+                                                      margin: auto;
+                                                      padding: 10px 0;
+                                                  }
+                                                  
+                                                  .header {
+                                                      margin-bottom: 70px;
+                                                      padding: 2rem 0;
+                                                      background-image: url('assets/pattern-circles.svg');
+                                                      background-repeat: no-repeat;
+                                                      background-position: center;
+                                                  }
+                                                  
+                                                  p {
+                                                      color: rgb(163, 163, 163);
+                                                      font-weight: 600;
+                                                  }
+                                                  
+                                                  h1 {
+                                                      font-size: 2rem;
+                                                  }
+                                                  
+                                                  .wrap-content {
+                                                      width: 90%;
+                                                      background: #fff;
+                                                      border-radius: 0.6rem;
+                                                      -webkit-border-radius: 0.6rem;
+                                                      -moz-border-radius: 0.6rem;
+                                                      -ms-border-radius: 0.6rem;
+                                                      -o-border-radius: 0.6rem;
+                                                  }
+                                                  
+                                                  .wrapper {
+                                                      padding: 50px 40px;
+                                                      position: relative;
+                                                  }
+                                                  
+                                                  #row1 {
+                                                      text-align: center;
+                                                  }
+                                                  
+                                                  .pageviews {
+                                                      padding-bottom: 30px;
+                                                      letter-spacing: 0.3rem;
+                                                  }
+                                                  
+                                                  .monthly {
+                                                      position: absolute;
+                                                      left: 50%;
+                                                      transform: translateX(-50%);
+                                                      -webkit-transform: translateX(-50%);
+                                                      -moz-transform: translateX(-50%);
+                                                      -ms-transform: translateX(-50%);
+                                                      -o-transform: translateX(-50%);
+                                                      top: 45%;
+                                                      font-size: 3rem;
+                                                      color: var(--dd-blue);
+                                                      display: flex;
+                                                      align-items: center;
+                                                  }
+                                                  
+                                                  .monthly span {
+                                                      padding-left: 5px;
+                                                      color: grey;
+                                                  }
+                                                  
+                                                  span.discount span {
+                                                      display: none;
+                                                  }
+                                                  
+                                                  .discount {
+                                                      background: var(--g-red);
+                                                      padding: 5px 15px;
+                                                      border-radius: 1rem;
+                                                      -webkit-border-radius: 1rem;
+                                                      -moz-border-radius: 1rem;
+                                                      -ms-border-radius: 1rem;
+                                                      -o-border-radius: 1rem;
+                                                      color: var(--l-red);
+                                                  }
+                                                  
+                                                  .rangeSlider {
+                                                      margin-bottom: 7rem;
+                                                  }
+                                                  
+                                                  input[type="range"] {
+                                                      width: 100%;
+                                                  }
+                                                  
+                                                  #row2 {
+                                                      display: flex;
+                                                      justify-content: end;
+                                                      align-items: center;
+                                                      padding-bottom: 10px;
+                                                      padding-top: 2rem;
+                                                  }
+                                                  
+                                                  #row2 p {
+                                                      padding-right: 10px;
+                                                  }
+                                                  
+                                                  .features div {
+                                                      padding: 10px 0;
+                                                  }
+                                                  /* check box */
+                                                  
+                                                  .switch {
+                                                      position: relative;
+                                                      display: inline-block;
+                                                      width: 50px;
+                                                      height: 24px;
+                                                      margin-right: 10px;
+                                                  }
+                                                  
+                                                  .switch input {
+                                                      opacity: 0;
+                                                      width: 0;
+                                                      height: 0;
+                                                  }
+                                                  
+                                                  .slider {
+                                                      position: absolute;
+                                                      cursor: pointer;
+                                                      top: 0;
+                                                      left: 0;
+                                                      right: 0;
+                                                      bottom: 0;
+                                                      background-color: var(--lg-blue);
+                                                      -webkit-transition: .4s;
+                                                      transition: .4s;
+                                                  }
+                                                  
+                                                  .slider:hover {
+                                                      background: var(--s-cyan);
+                                                  }
+                                                  
+                                                  .slider:before {
+                                                      position: absolute;
+                                                      content: "";
+                                                      height: 16px;
+                                                      width: 16px;
+                                                      left: 4px;
+                                                      bottom: 4px;
+                                                      background-color: white;
+                                                      -webkit-transition: .4s;
+                                                      transition: .4s;
+                                                  }
+                                                  
+                                                  input:checked+.slider {
+                                                      background-color: var(--st-cyan);
+                                                  }
+                                                  /* input:focus+.slider {
+    box-shadow: 0 0 1px var(--s-cyan);
+} */
+                                                  
+                                                  input:checked+.slider:before {
+                                                      -webkit-transform: translateX(5px);
+                                                      -ms-transform: translateX(5px);
+                                                      transform: translateX(5px);
+                                                      -moz-transform: translateX(5px);
+                                                      -o-transform: translateX(5px);
+                                                  }
+                                                  /* Rounded sliders */
+                                                  
+                                                  .slider.round {
+                                                      border-radius: 34px;
+                                                  }
+                                                  
+                                                  .slider.round:before {
+                                                      border-radius: 50%;
+                                                  }
+                                                  
+                                                  #row3 {
+                                                      text-align: center;
+                                                      font-weight: 500;
+                                                      color: hsl(0, 0%, 50%);
+                                                  }
+                                                  
+                                                  #row3 img {
+                                                      padding-right: 20px;
+                                                  }
+                                                  
+                                                  button {
+                                                      padding: 15px 50px;
+                                                      border-radius: 30px;
+                                                      margin: 40px;
+                                                      -webkit-border-radius: 30px;
+                                                      -moz-border-radius: 30px;
+                                                      -ms-border-radius: 30px;
+                                                      -o-border-radius: 30px;
+                                                      outline: none;
+                                                      border: none;
+                                                      cursor: pointer;
+                                                      background: var(--dd-blue);
+                                                      color: white;
+                                                      font-weight: 600;
+                                                  }
+                                                  
+                                                  button:hover {
+                                                      background: hsl(227, 35%, 32%);
+                                                  }
+                                                  
+                                                  #range-slider {
+                                                      -webkit-appearance: none;
+                                                      width: 100%;
+                                                      height: 10px;
+                                                      background: linear-gradient(to right, hsl(174, 77%, 50%) 0%, hsl(174, 77%, 50%) 50%, hsl(224, 65%, 95%) 0%, hsl(224, 65%, 95%) 100%);
+                                                      outline: none;
+                                                      opacity: 0.7;
+                                                      -webkit-transition: .2s;
+                                                      transition: opacity .2s;
+                                                      border-radius: 10px;
+                                                      -webkit-border-radius: 10px;
+                                                      -moz-border-radius: 10px;
+                                                      -ms-border-radius: 10px;
+                                                      -o-border-radius: 10px;
+                                                  }
+                                                  
+                                                  #range-slider:hover {
+                                                      opacity: 1;
+                                                  }
+                                                  
+                                                  #range-slider::-webkit-slider-thumb {
+                                                      -webkit-appearance: none;
+                                                      appearance: none;
+                                                      width: 45px;
+                                                      height: 45px;
+                                                      border-radius: 50%;
+                                                      background-image: url('assets/icon-slider.svg');
+                                                      background-repeat: no-repeat;
+                                                      background-position: center;
+                                                      background-color: var(--st-cyan);
+                                                      cursor: pointer;
+                                                      -webkit-border-radius: 50;
+                                                      -moz-border-radius: 50;
+                                                      -ms-border-radius: 50;
+                                                      -o-border-radius: 50;
+                                                      box-shadow: 2px 10px 21px var(--s-cyan);
+                                                  }
+                                                  
+                                                  #range-slider::-moz-range-thumb {
+                                                      width: 25px;
+                                                      height: 25px;
+                                                      background: #04AA6D;
+                                                      cursor: pointer;
+                                                  }
+                                                  
+                                                  @media screen and (min-width: 375px) {
+                                                      input:checked+.slider:before {
+                                                          -webkit-transform: translateX(11px);
+                                                          -ms-transform: translateX(11px);
+                                                          transform: translateX(11px);
+                                                          -moz-transform: translateX(11px);
+                                                          -o-transform: translateX(11px);
+                                                      }
+                                                  }
+                                                  
+                                                  @media screen and (min-width: 400px) {
+                                                      input:checked+.slider:before {
+                                                          -webkit-transform: translateX(15px);
+                                                          -ms-transform: translateX(15px);
+                                                          transform: translateX(15px);
+                                                          -moz-transform: translateX(15px);
+                                                          -o-transform: translateX(15px);
+                                                      }
+                                                  }
+                                                  
+                                                  @media screen and (min-width: 440px) {
+                                                      input:checked+.slider:before {
+                                                          -webkit-transform: translateX(22px);
+                                                          -ms-transform: translateX(22px);
+                                                          transform: translateX(22px);
+                                                          -moz-transform: translateX(22px);
+                                                          -o-transform: translateX(22px);
+                                                      }
+                                                  }
+                                                  
+                                                  @media screen and (min-width: 440px) {
+                                                      input:checked+.slider:before {
+                                                          -webkit-transform: translateX(25px);
+                                                          -ms-transform: translateX(25px);
+                                                          transform: translateX(25px);
+                                                          -moz-transform: translateX(25px);
+                                                          -o-transform: translateX(25px);
+                                                      }
+                                                  }
+                                                  
+                                                  @media screen and (min-width: 700px) {
+                                                      .header p {
+                                                          width: 100%;
+                                                          margin: auto;
+                                                          padding: 10px 0;
+                                                      }
+                                                      .header p {
+                                                          font-size: 1.2rem;
+                                                      }
+                                                      h1 {
+                                                          font-size: 2.5rem;
+                                                      }
+                                                      .monthly {
+                                                          position: absolute;
+                                                          left: auto;
+                                                          right: -5%;
+                                                          transform: translateX(-50%);
+                                                          -webkit-transform: translateX(-50%);
+                                                          -moz-transform: translateX(-50%);
+                                                          -ms-transform: translateX(-50%);
+                                                          -o-transform: translateX(-50%);
+                                                          top: 10%;
+                                                          font-size: 3rem;
+                                                          color: var(--dd-blue);
+                                                          display: flex;
+                                                          align-items: center;
+                                                          text-align: center;
+                                                      }
+                                                      #row1 {
+                                                          display: flex;
+                                                          align-items: center;
+                                                          padding-bottom: 20px;
+                                                      }
+                                                      .rangeSlider {
+                                                          margin-bottom: 2rem;
+                                                      }
+                                                      .wrap-content {
+                                                          width: 700px;
+                                                          background: #fff;
+                                                          border-radius: 0.6rem;
+                                                          -webkit-border-radius: 0.6rem;
+                                                          -moz-border-radius: 0.6rem;
+                                                          -ms-border-radius: 0.6rem;
+                                                          -o-border-radius: 0.6rem;
+                                                      }
+                                                      .wrapper {
+                                                          padding: 50px 60px;
+                                                          position: relative;
+                                                      }
+                                                      span.discount span {
+                                                          display: inline-block;
+                                                      }
+                                                      #row3 {
+                                                          display: flex;
+                                                          justify-content: space-between;
+                                                          padding: 50px 60px;
+                                                          margin: auto;
+                                                      }
+                                                      .features {
+                                                          text-align: left;
+                                                      }
+                                                  }
+                                                  
+                                                  @media screen and (min-width: 1162px) {
+                                                      .container {
+                                                          height: 100vh;
+                                                          width: 100%;
+                                                          padding-top: 3rem;
+                                                          display: flex;
+                                                          align-items: center;
+                                                          flex-direction: column;
+                                                          background-image: url('assets/bg-pattern.svg');
+                                                          background-repeat: no-repeat;
+                                                          background-color: var(--vp-blue);
+                                                          background-position: top;
+                                                          background-size: 100%;
+                                                      }
+                                                  }

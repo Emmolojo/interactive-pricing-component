@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Interactive price range</title>
+</head>
+
+<body>
+    <div role="main">
+        <div class="container">
+            <div class="header">
+                <h1>Simple, traffic-based pricing</h1>
+                <p>Sign-up for our 30-day trial. No credit card required.</p>
+            </div>
+            <div class="wrap-content">
+
+                <div class="wrapper">
+                    <div id="row1">
+                        <p class="pageviews">
+                            100K PAGEVIEWS
+                        </p>
+                        <p class="monthly">
+                            $16.00 <span class="month-cta">/month</span>
+                        </p>
+                    </div>
+                    <div class="rangeSlider">
+                        <input type="range" name="range" id="range-slider" min="0" max="4">
+                    </div>
+                    <div id="row2">
+                        <p>Monthly Billng</p>
+                        <label class="switch">
+                        <input type="checkbox" class="year-billing">
+                        <span class="slider round"></span>
+                    </label>
+                        <p>Yearly Billing</p>
+                        <span class="discount">25% <span>discount</span></span>
+                    </div>
+                </div>
+                <div id="row3">
+                    <div class="features">
+                        <div> <img src="assets/icon-check.svg" alt="check">Unlimited websites </div>
+                        <div> <img src="assets/icon-check.svg" alt="check">100% data ownership </div>
+                        <div> <img src="assets/icon-check.svg" alt="check">Email reports </div>
+                    </div>
+                    <div class="cta">
+                        <button>Start my trial</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
